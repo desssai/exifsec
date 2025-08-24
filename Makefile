@@ -1,4 +1,5 @@
-SRCS	=	./source/*.c
+SRCS	=	./source/exifsec.c \
+				./source/utils.c
 
 OBJS	=	$(SRCS:.c=.o)
 
@@ -8,7 +9,7 @@ NAME	=	exifsec
 
 GCC		=	gcc
 
-FLAGS	=	-Wall -Werror -Wextra # -fsanitize=address
+FLAGS	=	-Wall -Werror -Wextra  -fsanitize=address
 
 RM		=	rm -f
 
